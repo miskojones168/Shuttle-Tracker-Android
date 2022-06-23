@@ -1,14 +1,28 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     style="@style/Widget.RPIShuttleTracker.AppWidget.Container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#e5e8e8"
     android:theme="@style/AppTheme.AppWidgetContainer">
 
-    <Button
-        android:id="@+id/board_bus_widget_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Board Bus"
-        android:textColor="@color/colorPrimary"
+    <ImageView
+        android:id="@+id/sync"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:src="@mipmap/ic_launcher_adaptive_fore"></ImageView>
+
+    <ImageView
+        android:id="@+id/mapImg"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@mipmap/ic_launcher_adaptive_fore"
         />
+
+
 </RelativeLayout>
